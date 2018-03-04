@@ -1,7 +1,7 @@
 {
-  "name": "koa-starter",
+  "name": "koa-starter-vgs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/main",
   "license": "MIT",
   "scripts": {
     "start": "node build/main",
@@ -15,6 +15,10 @@
     "koa-combine-routers": "^2.0.1",
     "koa-router": "^7.4.0",
     "source-map-support": "^0.5.3"
+  },
+  "author": {
+    "name": "Gegham Samvelyan",
+    "github": "https://github.com/vamosgs"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
