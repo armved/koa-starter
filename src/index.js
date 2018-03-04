@@ -1,4 +1,5 @@
 const Koa = require('koa');
+
 const app = new Koa();
 const routes = require('./routes');
 
@@ -8,6 +9,5 @@ const { PORT, HOST } = process.env;
 
 app.use(routes);
 app.listen(PORT, () => {
-    console.log(`started in http://${HOST}:${PORT}`);
+  console.log(`started in http://${HOST}:${PORT}`);
 });
- 

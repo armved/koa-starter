@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node build/main",
     "dev": "./node_modules/.bin/backpack dev",
-    "build": "./node_modules/.bin/backpack build"
+    "build": "./node_modules/.bin/backpack build",
+    "flow": "./node_modules/.bin/flow"
   },
   "dependencies": {
     "dotenv": "^5.0.1",
@@ -22,6 +23,8 @@
     "backpack-core": "^0.5.0",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0"
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "flow-bin": "^0.66.0"
   }
 }
