@@ -1,4 +1,4 @@
-## koa-vgs-starter
+## koa-starter-vgs
 
 ### In progress...
 
