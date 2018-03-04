@@ -74,9 +74,68 @@ module.exports = __webpack_require__(1);
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const Koa = __webpack_require__(2);
+const app = new Koa();
+const routes = __webpack_require__(3);
+
+if (true) __webpack_require__(7).config();
+
+const { PORT, HOST } = process.env;
+
+app.use(routes);
+app.listen(PORT, () => {
+    console.log(`started in http://${HOST}:${PORT}`);
+});
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
-console.log('object');
+module.exports = require("koa");
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const combine = __webpack_require__(4);
+const root = __webpack_require__(5);
+
+const routes = combine([root]);
+
+module.exports = routes;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = require("koa-combine-routers");
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const Router = __webpack_require__(6);
+const root = new Router();
+
+root.get('/', async ctx => {
+    ctx.body = '<h2>Working..</h2>';
+});
+
+module.exports = root;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("koa-router");
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("dotenv");
 
 /***/ })
 /******/ ]);
