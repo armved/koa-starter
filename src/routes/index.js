@@ -1,6 +1,6 @@
-const combine = require('koa-combine-routers');
+const { combineRouters } = require('../utils');
 const root = require('./root');
 
-const routes = combine([root]);
+const routes = combineRouters([root]);
 
 module.exports = routes;
