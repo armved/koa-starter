@@ -2,10 +2,10 @@
 
 ### What includes:
 
-* Multipy Koa-Routers using.
-* Flowtype.
-* Eslint.
-* Backpack.
+* Multipy use of Koa-Routers
+* Flowtype
+* ESLint
+* Backpack
 
 ### Usage
 
@@ -21,7 +21,7 @@ git clone https://github.com/vamosgs/koa-starter.git
 
 ### Routing:
 
-Create your router in src/routes file
+Create your router in src/routes folder
 then import it in src/routes/index.js
 
 example:
@@ -50,4 +50,4 @@ const routes = combineRouters([root, newRouter]);
   yarn start
   ```
 
-### Its still in progress...
+### WIP...
